@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kirubakaran Chinnadurai – Full Stack Developer (Flutter, React, Golang), Chennai">
+<title>Kirubakaran Chinnadurai – Developer Portfolio</title>
+<style>
+  :root{--bg:#0b1020;--card:#121a30;--text:#e6e9f2;--muted:#9aa3b8;--accent:#22d3ee;--accent2:#a78bfa;--line:#22304f}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:rgba(11,16,32,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .logo{font-weight:800;font-size:1.2rem}nav .logo span{color:var(--accent)}
+  nav ul{display:flex;gap:18px;list-style:none;font-size:.95rem}
+  nav ul a:hover{color:var(--accent)}
+  @media(max-width:640px){nav ul{gap:10px;font-size:.8rem}nav .logo{display:none}}
+  section{max-width:1040px;margin:auto;padding:80px 20px}
+  .hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center}
+  .hero small{color:var(--accent);font-weight:600;letter-spacing:.08em}
+  .hero h1{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.15;margin:10px 0}
+  .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);max-width:600px;font-size:1.1rem}
+  .btns{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+  .btn{padding:12px 22px;border-radius:10px;font-weight:600;border:1px solid var(--line)}
+  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b1020;border:none}
+  h2{font-size:1.8rem;margin-bottom:24px}h2::after{content:'';display:block;width:48px;height:4px;border-radius:2px;margin-top:8px;background:var(--accent)}
+  .skills{display:flex;flex-wrap:wrap;gap:10px}
+  .skill{background:var(--card);border:1px solid var(--line);padding:8px 16px;border-radius:30px;font-size:.92rem}
+  .projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+  .project{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+  .project:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .project .ico{font-size:1.8rem}
+  .project h3{margin:8px 0 6px}
+  .project p{color:var(--muted);font-size:.93rem;flex:1}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+  .tags span{font-size:.75rem;color:var(--accent);background:rgba(34,211,238,.1);padding:3px 10px;border-radius:20px}
+  .links{display:flex;gap:16px;font-size:.9rem;font-weight:600}
+  .links a:hover{color:var(--accent)}
+  .about p{color:var(--muted);max-width:720px;margin-bottom:12px}
+  .contact{text-align:center}
+  .contact h2::after{margin:8px auto 0}
+  .contact p{color:var(--muted);margin-bottom:24px}
+  .contact .btns{justify-content:center}
+  footer{text-align:center;color:var(--muted);font-size:.85rem;padding:30px;border-top:1px solid var(--line)}
+  .reveal{opacity:0;transform:translateY(24px);transition:all .6s ease}
+  .reveal.show{opacity:1;transform:none}
+  .stats{display:flex;gap:36px;margin-top:40px;flex-wrap:wrap}
+  .stats b{display:block;font-size:2rem;color:var(--accent)}.stats span{color:var(--muted);font-size:.9rem}
+  .sg{font-size:1rem;color:var(--muted);margin:22px 0 10px;font-weight:600}
+  .timeline{border-left:2px solid var(--line);padding-left:22px}
+  .job{position:relative;margin-bottom:30px}
+  .job::before{content:'';position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+  .when{color:var(--accent);font-size:.85rem;font-weight:600}
+  .job h3{margin:4px 0 8px}
+  .job ul{color:var(--muted);padding-left:18px;font-size:.95rem}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#" class="logo">KC<span>.</span></a>
+  <ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav>
+
+<section class="hero">
+  <small>HI, I'M</small>
+  <h1>Kirubakaran Chinnadurai<br><span class="grad">Full Stack Developer</span></h1>
+  <p>4+ years building cross-platform mobile apps with Flutter, web apps with React.js &amp; Next.js, and backends with Golang &amp; Node.js. Currently SDE-II at Fynro.</p>
+  <div class="btns">
+    <a class="btn primary" href="#projects">View my work</a>
+    <a class="btn" href="mailto:Kirubakaranchinnadurai20@gmail.com">Email me</a>
+  </div>
+  <div class="stats"><div><b>4+</b><span>Years experience</span></div><div><b>6+</b><span>Apps on Play Store &amp; App Store</span></div><div><b>3</b><span>Companies</span></div></div>
+</section>
+
+<section id="about" class="about reveal">
+  <h2>About me</h2>
+  <p>I'm a Full Stack Developer based in Chennai. I currently work as an SDE-II at Fynro Advisory Services, building financial advisory and wealth management products with Flutter and Golang.</p>
+  <p>I've shipped production apps to the Google Play Store and Apple App Store, built React.js web apps with real-time features, and designed REST APIs in Golang, Node.js and NestJS. I care about performance, clean architecture (MVVM) and code quality, and I work well in Agile teams.</p>
+  <p>🎓 B.Tech, Electronics &amp; Communication Engineering, SRM University, Chennai.</p>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <h3 class="sg">Mobile &amp; Frontend</h3><div class="skills"><span class="skill">Flutter</span><span class="skill">Dart</span><span class="skill">React.js</span><span class="skill">Next.js</span><span class="skill">TypeScript</span><span class="skill">JavaScript</span><span class="skill">Redux</span><span class="skill">GetX</span><span class="skill">Provider</span><span class="skill">MVVM</span></div><h3 class="sg">Backend &amp; APIs</h3><div class="skills"><span class="skill">Golang</span><span class="skill">Node.js</span><span class="skill">NestJS</span><span class="skill">PHP</span><span class="skill">REST APIs</span></div><h3 class="sg">Cloud &amp; Database</h3><div class="skills"><span class="skill">Firebase</span><span class="skill">Google Cloud</span><span class="skill">Firestore</span><span class="skill">PostgreSQL</span></div><h3 class="sg">Tools &amp; Practices</h3><div class="skills"><span class="skill">Git</span><span class="skill">CI/CD</span><span class="skill">Agile / Scrum</span><span class="skill">Code Reviews</span><span class="skill">Play Store &amp; App Store Deployment</span></div>
+</section>
+
+<section id="experience" class="reveal">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="job"><div class="when">May 2026 – Present</div><h3>Software Development Engineer II · Fynro Advisory Services</h3>
+      <ul><li>Cross-platform Flutter apps (Android &amp; iOS) for financial advisory and wealth management</li><li>Backend services, business logic and scalable REST APIs in Golang</li><li>Performance, security and scalability work; code reviews and architecture discussions</li></ul></div>
+    <div class="job"><div class="when">May 2024 – Apr 2026</div><h3>React Developer · C1X Adtech</h3>
+      <ul><li>React.js web apps with real-time chat and calendar integration</li><li>Redux state management; REST API integration with the backend team</li><li>Faster load times through fewer re-renders and lazy loading</li></ul></div>
+    <div class="job"><div class="when">Jun 2022 – Apr 2024</div><h3>Flutter Developer · Digisailor</h3>
+      <ul><li>Delivered 3+ production Flutter apps on Android and iOS</li><li>REST APIs with GetX and Provider state management</li><li>Worked closely with UI/UX designers on responsive interfaces</li></ul></div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <h3 class="sg">Professional work</h3>
+<div class="projects">
+<div class="project"><div class="ico">📈</div><h3>Fynro</h3><p>Financial advisory and wealth management platform. Built Golang APIs for advisor onboarding, auth and financial planning modules, plus Flutter app features.</p><div class="tags"><span>Flutter</span><span>Golang</span><span>React</span><span>PostgreSQL</span><span>Firebase</span></div></div>
+<div class="project"><div class="ico">🛒</div><h3>GroupKart</h3><p>E-commerce app on the Play Store and App Store with secure payments, real-time order tracking and push notifications.</p><div class="tags"><span>Flutter</span><span>Node.js</span><span>Firebase</span></div></div>
+<div class="project"><div class="ico">🏸</div><h3>Games Ville</h3><p>Sports academy app for subscriptions, games, courts and slots, with a Firebase web admin panel. Live on both stores.</p><div class="tags"><span>Flutter</span><span>Firebase</span><span>MVVM</span></div></div>
+<div class="project"><div class="ico">💳</div><h3>AMESU</h3><p>Loan application app for Malaysian citizens using NRIC numbers, with secure data handling. Live on both stores.</p><div class="tags"><span>Flutter</span><span>PHP</span><span>GetX</span></div></div>
+<div class="project"><div class="ico">💬</div><h3>NUTEAIW</h3><p>Community app with followers, follow requests and posts. Published on the Play Store and App Store.</p><div class="tags"><span>Flutter</span><span>PHP</span><span>GetX</span></div></div>
+<div class="project"><div class="ico">🩺</div><h3>Remedi</h3><p>Doctor and clinic enrollment platform with an admin dashboard for analytics and user management.</p><div class="tags"><span>React (TSX)</span><span>REST API</span></div></div>
+<div class="project"><div class="ico">📍</div><h3>LocalX</h3><p>Backend for a local services discovery platform with filtering, sorting and event logging for analytics.</p><div class="tags"><span>NestJS</span><span>Node.js</span></div></div>
+</div>
+<h3 class="sg">Open-source demos</h3>
+<div class="projects">
+<div class="project"><div class="ico">🗂️</div><h3>TaskFlow</h3><p>Drag-and-drop Kanban board with priorities, due dates, overdue alerts, search and dark mode.</p><div class="tags"><span>JavaScript</span><span>Drag &amp; Drop API</span></div><div class="links"><a href="https://ckkaran.github.io/taskflow-kanban/" target="_blank" rel="noopener">Live ↗</a><a href="https://github.com/ckkaran/taskflow-kanban" target="_blank" rel="noopener">Code ↗</a></div></div>
+<div class="project"><div class="ico">💸</div><h3>SplitSmart</h3><p>Group expense splitter that settles up in the fewest possible payments.</p><div class="tags"><span>JavaScript</span><span>Algorithms</span></div><div class="links"><a href="https://ckkaran.github.io/split-smart/" target="_blank" rel="noopener">Live ↗</a><a href="https://github.com/ckkaran/split-smart" target="_blank" rel="noopener">Code ↗</a></div></div>
+</div>
+</section>
+
+<section id="contact" class="contact reveal">
+  <h2>Let's work together</h2>
+  <p>Have a project or an opportunity? I'd love to hear about it.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:Kirubakaranchinnadurai20@gmail.com">Email me</a>
+    <a class="btn" href="https://www.linkedin.com/in/kirubakaran-chinnadurai-24a61b247" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/ckkaran" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Kirubakaran Chinnadurai · Built with HTML, CSS &amp; JavaScript</footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
